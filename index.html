@@ -2,11 +2,212 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Дизайн-студия Нёрдс</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+      <div class="container">
+
+        <nav class="navigation">
+          <div class="logo">
+            <a class="logo__link" alt="Логотип &laquo;Нёрдс&raquo;">
+              <img class="logo__img" src="http://placehold.it/160x65" width="160" height="65" alt="Логотип &laquo;Нёрдс&raquo;">
+            </a>
+          </div>
+          <ul>
+            <li class="navigation__item">
+              <a class="navigation__link" href="blank.html">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="blank.html">Клиенты</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="shop.html">Магазин</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+          <ul class="navigation__backet">
+            <li class="navigation__item">
+              <a class="navigation__link" href="blank.html" >Корзина</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h1>Дизайн-студия &laquo;Нёрдс&raquo;</h1>
+
+        <section class="slider">
+          <h2>Преимущества</h2>
+
+          <ul class="slider__list">
+            <li class="slider__item">
+              <p class="slider__title">Долго, дорого, скрупулезно.</p>
+              <p class="slider__info">Математически выверенный дизайн
+                для вашего сайта или мобильного приложения.</p>
+              <a class="slider__btn btn" href="blank.html">Узнать больше</a>
+            </li>
+
+            <li class="slider__item">
+              <p class="slider__title">Любим математику, как никто другой.</p>
+              <p class="slider__info">Никакого креатива, только математические
+                формулы для расчета идеальных пропорций.</p>
+              <a class="slider__btn btn" href="blank.html">Узнать больше</a>
+            </li>
+
+            <li class="slider__item">
+              <p class="slider__title">Только ночь, только хардкор.</p>
+              <p class="slider__info">Работать днем, как все? Мы против этого.
+                Ближе к полуночи работа только начинается.</p>
+              <a class="slider__btn btn" href="blank.html">Узнать больше</a>
+            </li>
+          </ul>
+
+          <ul class="slider__controls controls">
+            <li class="controls__item">1</li>
+            <li class="controls__item">2</li>
+            <li class="controls__item">3</li>
+          </ul>
+
+        </section>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="offers">
+        <div class="container">
+          <h2>Услуги</h2>
+          <ul class="offers__list">
+            <li class="offers__item offers__item--web">
+              <h3 class="offers__title">Веб-сайты</h3>
+              <p class="offers__info">Мир никогда не будет прежним
+                после того как увидит ваш сайт!</p>
+              <a class="btn btn--web" href="blank.html">Заказать</a>
+            </li>
+
+            <li class="offers__item offers__item--app">
+              <h3 class="offers__title">Приложения</h3>
+              <p class="offers__info">Покорите топ-10 приложений в
+                 AppStore и Google Play</p>
+              <a class="btn btn--app" href="blank.html">Заказать</a>
+            </li>
+
+            <li class="offers__item offers__item--show">
+              <h3 class="offers__title">Презентации</h3>
+              <p class="offers__info">Вы даже не подозреваете,
+                насколько вы изумительны!</p>
+              <a class="btn btn--show" href="blank.html">Заказать</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+        <section class="about-us">
+          <div class="container">
+            <h2>Информация о нашей компании</h2>
+            <div class="about-us__wrapper">
+
+              <div class="info">
+                <p class="info__slogan">Мы — маленькая, но гордая дизайн-студия
+                   из Краснодара.</p>
+                <p class="info__concept">Исповедуем принципы минимализма и чистоты.
+                  Ставим математический расчет превыше креатива. Работаем не покладая рук,
+                  как роботы.</p>
+                <h4 class="info__title">Выполняем заказы на разработку</h4>
+                <ul class="info__list">
+                  <li class="info__item">Веб-сайтов любой сложности</li>
+                  <li class="info__item">Мобильных приложений для iOS и Android</li>
+                  <li class="info__item">Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+              </div>
+
+              <div class="data">
+                <h4 class="data__title">С 2004 года Любим точность во всем:</h4>
+                <img class="data__img" src="http://placehold.it/360x208" width="360" height="208" alt="Нердс">
+                <table class="data__table table">
+                  <tr class="table__wrapper">
+                    <td class="table__title">Уровень самоотдачи</td>
+                    <td class="table__title">Соблюдение сроков</td>
+                    <td class="table__title">Минимальная предоплата</td>
+                  </tr>
+                  <tr class="table__wrapper">
+                    <td class="table__item">146<span>%</span></td>
+                    <td class="table__item">100<span>%</span></td>
+                    <td class="table__item">50<span>%</span></td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="main-portfolio">
+          <div class="container">
+            <h2>Наши работы</h2>
+            <ul class="main-portfolio__list">
+              <li class="main-portfolio__item">
+                <a class="main-portfolio__link" href="blank.html">
+                  <img class="main-portfolio__img" src="http://placehold.it/199x68" width="199" height="68" alt="HTMLacademy">
+                </a>
+              </li>
+              <li class="main-portfolio__item">
+                <a class="main-portfolio__link" href="blank.html">
+                  <img class="main-portfolio__img" src="http://placehold.it/209x90" width="209" height="90" alt="Borodinski">
+                </a>
+              </li>
+              <li class="main-portfolio__item">
+                <a class="main-portfolio__link" href="blank.html">
+                  <img class="main-portfolio__img" src="http://placehold.it/185x52" width="185" height="52" alt="PINK">
+                </a>
+              </li>
+              <li class="main-portfolio__item">
+                <a class="main-portfolio__link" href="blank.html">
+                  <img class="main-portfolio__img" src="http://placehold.it/173x84" width="173" height="84" alt="Mishka">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__wrapper">
+            <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
+            <p class="contacts__info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a class="contacts__phone" href="+tel:78122757575">тел. +7 (812) 275 75 75</a>
+            <a class="contacts__btn btn" href="blank.html">Напишите нам</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="social">
+        <div class="container">
+
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="blank.html" alt="Вконтакте" >Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="blank.html" alt="Facebook" >Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="blank.html" alt="Instagram" >Инстаграм</a>
+            </li>
+          </ul>
+
+          <div class="discount">
+            <p class="discount__promo">Давайте дружить, это выгодно!</p>
+            <p class="discount__info">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
 
   </body>
 </html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог шаблонов</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+
+        <nav class="navigation">
+          <div class="logo">
+            <a class="logo__link" href="index.html" alt="Логотип &laquo;Нёрдс&raquo;">
+              <img class="logo__img" src="http://placehold.it/160x65" width="160" height="65" alt="Логотип &laquo;Нёрдс&raquo;">
+            </a>
+          </div>
+          <ul>
+            <li class="navigation__item">
+              <a class="navigation__link" href="blank.html">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="blank.html">Клиенты</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link">Магазин</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+          <ul class="navigation__backet">
+            <li class="navigation__item">
+              <a class="navigation__link" href="blank.html" >Корзина</a>
+            </li>
+          </ul>
+        </nav>
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+
+        <section class="filters">
+          <h2>Фильтр шаблонов</h2>
+          <form method="get" action="">
+            <fieldset class="filters__wrapper">
+              <legend class="filters__title">Стоимость:</legend>
+              <input type="range" name="range" id="range__price" min="0" max="100"
+              value="60">
+              <label for="range__price">
+                <div class="range__wrapper">
+                   <span>от</span>
+                   <span>до</span>
+                 </div>
+              </label>
+            </fieldset>
+
+            <fieldset class="filters__wrapper">
+              <legend class="filters__title">Сетка:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input type="radio" name="gride" value="adaptive"
+                  id="gride-adaptive" checked>
+                  <label for="gride-adaptive">Адаптивная</label>
+                </li>
+                <li class="filters__item">
+                  <input type="radio" name="gride" value="fixed"
+                  id="gride-fixed">
+                  <label for="gride-fixed">Фиксированная</label>
+                </li>
+                <li class="filters__item">
+                  <input type="radio" name="gride" value="rubber"
+                  id="gride-rubber">
+                  <label for="gride-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filters__wrapper">
+              <legend class="filters__title">Особенности:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input type="checkbox" name="case-slider" id="option-slider" checked>
+                  <label for="option-slider">Слайдер</label>
+                </li>
+                <li class="filters__item">
+                  <input type="checkbox" name="case-vantage" id="option-vantage">
+                  <label for="option-vantage">Блок преимуществ</label>
+                </li>
+                <li class="filters__item">
+                  <input type="checkbox" name="case-news" id="option-news" checked>
+                  <label for="option-news">Новости</label>
+                </li>
+                <li class="filters__item">
+                  <input type="checkbox" name="case-gallery" id="option-gallery">
+                  <label for="option-gallery">Галерея</label>
+                </li>
+                <li class="filters__item">
+                  <input type="checkbox" name="case-backet" id="option-backet">
+                  <label for="option-backet">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filter__btn btn" type="submit">Показать</button>
+          </form>
+        </section>
+
+        <div class="shop-wrapper">
+          <h2>Каталог шаблонов</h2>
+
+          <section class="sort">
+            <p class="sort__title">Сортировать</p>
+            <ul class="sort__list">
+              <li class="sort__item">
+                <button class="sort__btn" type="button">По цене</button>
+              </li>
+              <li class="sort__item">
+                <button class="sort__btn" type="button">По типу</button>
+              </li>
+              <li class="sort__item">
+                <button class="sort__btn" type="button">По названию</button>
+              </li>
+            </ul>
+            <ul class="sort__list">
+              <li class="sort__item">
+                <button class="sort__btn" type="button">Больше</button>
+              </li>
+              <li class="sort__item">
+                <button class="sort__btn" type="button">Меньше</button>
+              </li>
+            </ul>
+          </section>
+
+          <section class="shop">
+            <ul class="shop__list">
+
+              <li class="shop__item">
+                <a class="shop__link" href="blank.html">
+                  <img class="shop__img" src="http://placehold.it/358x578" width="358" height="578" alt="Sedona">
+                </a>
+                <div class="shop-hover">
+                  <h3 class="shop-hover__title">Sedona</h3>
+                  <p class="shop-hover__info">Информационный сайт для туристов</p>
+                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
+                </div>
+              </li>
+
+              <li class="shop__item">
+                <a class="shop__link" href="blank.html">
+                  <img class="shop__img" src="http://placehold.it/358x578" width="358" height="578" alt="Pink">
+                </a>
+                <div class="shop-hover">
+                  <h3 class="shop-hover__title">Pink APP</h3>
+                  <p class="shop-hover__info">Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
+                </div>
+              </li>
+
+              <li class="shop__item">
+                <a class="shop__link" href="blank.html">
+                  <img class="shop__img" src="http://placehold.it/358x578" width="358" height="578" alt="Barbershop">
+                </a>
+                <div class="shop-hover">
+                  <h3 class="shop-hover__title">Barbershop</h3>
+                  <p class="shop-hover__info">Сайт салона красоты. Для мужчин, да.</p>
+                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
+                </div>
+              </li>
+
+              <li class="shop__item">
+                <a class="shop__link" href="blank.html">
+                  <img class="shop__img" src="http://placehold.it/358x578" width="358" height="578" alt="Mishka">
+                </a>
+                <div class="shop-hover">
+                  <h3 class="shop-hover__title">Mishka</h3>
+                  <p class="shop-hover__info">Интернет-магазин вязаных игрушек</p>
+                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
+                </div>
+              </li>
+
+              <li class="shop__item">
+                <a class="shop__link" href="blank.html">
+                  <img class="shop__img" src="http://placehold.it/358x578" width="358" height="578" alt="Кваст">
+                </a>
+                <div class="shop-hover">
+                  <h3 class="shop-hover__title">Кваст</h3>
+                  <p class="shop-hover__info">Промо-сайт производителя крафтового кваса</p>
+                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__wrapper">
+            <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
+            <p class="contacts__info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a class="contacts__phone" href="+tel:78122757575">тел. +7 (812) 275 75 75</a>
+            <a class="contacts__btn btn" href="blank.html">Напишите нам</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="social">
+        <div class="container">
+
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="blank.html" alt="Вконтакте" >Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="blank.html" alt="Facebook" >Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="blank.html" alt="Instagram" >Инстаграм</a>
+            </li>
+          </ul>
+
+          <div class="discount">
+            <p class="discount__promo">Давайте дружить, это выгодно!</p>
+            <p class="discount__info">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+  </body>
+</html>
