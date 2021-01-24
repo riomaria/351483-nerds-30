@@ -10,10 +10,8 @@
       <div class="container">
 
         <nav class="navigation">
-          <div class="logo">
-            <a class="logo__link" alt="Логотип &laquo;Нёрдс&raquo;">
-              <img class="logo__img" src="http://placehold.it/160x65" width="160" height="65" alt="Логотип &laquo;Нёрдс&raquo;">
-            </a>
+          <div class="logo__link">
+            <img class="logo__img" src="http://placehold.it/160x65" width="160" height="65" alt="Логотип &laquo;Нёрдс&raquo;">
           </div>
           <ul>
             <li class="navigation__item">
@@ -29,11 +27,9 @@
               <a class="navigation__link" href="blank.html">Контакты</a>
             </li>
           </ul>
-          <ul class="navigation__backet">
-            <li class="navigation__item">
-              <a class="navigation__link" href="blank.html" >Корзина</a>
-            </li>
-          </ul>
+          <div class="navigation__item backet">
+            <a class="navigation__link" href="blank.html" >Корзина</a>
+          </div>
         </nav>
 
         <h1>Дизайн-студия &laquo;Нёрдс&raquo;</h1>
@@ -64,11 +60,11 @@
             </li>
           </ul>
 
-          <ul class="slider__controls controls">
-            <li class="controls__item">1</li>
-            <li class="controls__item">2</li>
-            <li class="controls__item">3</li>
-          </ul>
+          <div class="slider__controls controls">
+            <button class="controls__item" type="button">1</button>
+            <button class="controls__item" type="button">2</button>
+            <button class="controls__item" type="button">3</button>
+          </div>
 
         </section>
       </div>
@@ -115,7 +111,7 @@
                 <p class="info__concept">Исповедуем принципы минимализма и чистоты.
                   Ставим математический расчет превыше креатива. Работаем не покладая рук,
                   как роботы.</p>
-                <h4 class="info__title">Выполняем заказы на разработку</h4>
+                <h5 class="info__title">Выполняем заказы на разработку</h5>
                 <ul class="info__list">
                   <li class="info__item">Веб-сайтов любой сложности</li>
                   <li class="info__item">Мобильных приложений для iOS и Android</li>
@@ -124,8 +120,8 @@
               </div>
 
               <div class="data">
+                <img class="data__img" src="http://placehold.it/360x208" width="360" height="208" alt="Логотип &laquo;Нёрдс&raquo;">
                 <h4 class="data__title">С 2004 года Любим точность во всем:</h4>
-                <img class="data__img" src="http://placehold.it/360x208" width="360" height="208" alt="Нердс">
                 <table class="data__table table">
                   <tr class="table__wrapper">
                     <td class="table__title">Уровень самоотдачи</td>
@@ -133,9 +129,9 @@
                     <td class="table__title">Минимальная предоплата</td>
                   </tr>
                   <tr class="table__wrapper">
-                    <td class="table__item">146<span>%</span></td>
-                    <td class="table__item">100<span>%</span></td>
-                    <td class="table__item">50<span>%</span></td>
+                    <td class="table__item">146<sup>%</sup></td>
+                    <td class="table__item">100<sup>%</sup></td>
+                    <td class="table__item">50<sup>%</sup></td>
                   </tr>
                 </table>
               </div>
@@ -177,8 +173,8 @@
       <section class="contacts">
         <div class="container">
           <div class="contacts__wrapper">
-            <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
-            <p class="contacts__info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <h4 class="contacts__title">NЁRDS DESIGN STUDIO</h4>
+            <address class="contacts__info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             <a class="contacts__phone" href="+tel:78122757575">тел. +7 (812) 275 75 75</a>
             <a class="contacts__btn btn" href="blank.html">Напишите нам</a>
           </div>
@@ -186,17 +182,18 @@
       </section>
 
       <section class="social">
+        <h2>Мы в социальных сетях</h2>
         <div class="container">
 
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="blank.html" alt="Вконтакте" >Вконтакте</a>
+              <a class="social__link social__link--vk" href="blank.html">Вконтакте</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="blank.html" alt="Facebook" >Фейсбук</a>
+              <a class="social__link social__link--fb" href="blank.html">Фейсбук</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--inst" href="blank.html" alt="Instagram" >Инстаграм</a>
+              <a class="social__link social__link--inst" href="blank.html">Инстаграм</a>
             </li>
           </ul>
 

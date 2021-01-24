@@ -10,7 +10,7 @@
 
         <nav class="navigation">
           <div class="logo">
-            <a class="logo__link" href="index.html" alt="Логотип &laquo;Нёрдс&raquo;">
+            <a class="logo__link" href="index.html">
               <img class="logo__img" src="http://placehold.it/160x65" width="160" height="65" alt="Логотип &laquo;Нёрдс&raquo;">
             </a>
           </div>
@@ -28,11 +28,9 @@
               <a class="navigation__link" href="blank.html">Контакты</a>
             </li>
           </ul>
-          <ul class="navigation__backet">
-            <li class="navigation__item">
-              <a class="navigation__link" href="blank.html" >Корзина</a>
-            </li>
-          </ul>
+          <div class="navigation__item backet">
+            <a class="navigation__link" href="blank.html" >Корзина</a>
+          </div>
         </nav>
         <h1>Магазин готовых шаблонов</h1>
       </div>
@@ -48,12 +46,14 @@
               <legend class="filters__title">Стоимость:</legend>
               <input type="range" name="range" id="range__price" min="0" max="100"
               value="60">
-              <label for="range__price">
-                <div class="range__wrapper">
-                   <span>от</span>
-                   <span>до</span>
-                 </div>
-              </label>
+              <div class="range">
+                <label class="range__subtitle" for="range__min">от</label>
+                <input class="range__item range__item--min" id="range__min"
+                type="text" name="min-price" value="0">
+                <label class="range__subtitle" for="range__max">до</label>
+                <input class="range__item range__item--max" id="range__max"
+                type="text" name="max-price" value="15000">
+              </div>
             </fieldset>
 
             <fieldset class="filters__wrapper">
@@ -107,10 +107,9 @@
         </section>
 
         <div class="shop-wrapper">
-          <h2>Каталог шаблонов</h2>
-
           <section class="sort">
-            <p class="sort__title">Сортировать</p>
+            <h2>Фильтр шаблонов по параметрам</h2>
+            <h3 class="sort__title">Сортировать</h3>
             <ul class="sort__list">
               <li class="sort__item">
                 <button class="sort__btn" type="button">По цене</button>
@@ -133,8 +132,9 @@
           </section>
 
           <section class="shop">
-            <ul class="shop__list">
+            <h2>Магазин шаблонов</h2>
 
+            <ul class="shop__list">
               <li class="shop__item">
                 <a class="shop__link" href="blank.html">
                   <img class="shop__img" src="http://placehold.it/358x578" width="358" height="578" alt="Sedona">
@@ -200,8 +200,8 @@
       <section class="contacts">
         <div class="container">
           <div class="contacts__wrapper">
-            <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
-            <p class="contacts__info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
+            <address class="contacts__info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             <a class="contacts__phone" href="+tel:78122757575">тел. +7 (812) 275 75 75</a>
             <a class="contacts__btn btn" href="blank.html">Напишите нам</a>
           </div>
@@ -209,17 +209,18 @@
       </section>
 
       <section class="social">
+        <h2>Мы в социальных сетях</h2>
         <div class="container">
 
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="blank.html" alt="Вконтакте" >Вконтакте</a>
+              <a class="social__link social__link--vk" href="blank.html">Вконтакте</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="blank.html" alt="Facebook" >Фейсбук</a>
+              <a class="social__link social__link--fb" href="blank.html">Фейсбук</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--inst" href="blank.html" alt="Instagram" >Инстаграм</a>
+              <a class="social__link social__link--inst" href="blank.html">Инстаграм</a>
             </li>
           </ul>
 
