@@ -1,0 +1,256 @@
+/* Variables*/
+
+:root {
+  --basic-theme: #FFFFFF;
+  --basic-text: #283136;
+  --basiс-title: #000000;
+  --red: #FB565A;
+  --red-hover: #E74246;
+  --red-focus: #D7373B;
+  --green: #00CA74;
+  --green-hover: #00BC6C;
+  --green-focus: #00AA62;
+  --yellow: #EFC84A;
+  --yellow-hover: #EAB534;
+  --yellow-focus: #E5A722;
+  --grey: #EEEEEE;
+  --grey-hover: #DFDFDF;
+  --grey-active: #D5D5D5;
+  --basic-social: #E1E1E1;
+  --basic-preview-browser: #4D4D4D;
+  --basic-contacts: #666666;
+  --basic-footer-info: #444444;
+}
+
+/* Global */
+body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-text);
+  background-color: var(--basic-theme);
+
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Button */
+.btn {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-theme);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--red);
+  border: none;
+}
+.btn:hover {
+  background-color: var(--red-hover);
+}
+.btn:focus {
+  background-color: var(--red-focus);
+}
+
+/* Grid */
+.page {
+  height: 100%;
+}
+
+/* Main navigation */
+.main-header {
+  background-color: var(--grey);
+}
+.navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-title);
+  text-transform: uppercase;
+}
+.navigation__list {
+  list-style: none;
+}
+
+/* User navigation */
+
+.navigation__link {
+  color: var(--basic-title);
+}
+.navigation__link:hover {
+  color: var(--red-hover);
+}
+.navigation__link:focus {
+  color: var(--basic-title); /!чего-то не могу пока придумать, как сделать его не красным
+  opacity: 30%;
+}
+
+/* Main slider */
+.slider {
+  background-color: var(--grey);
+}
+.slider__list {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.slider__title {
+  padding: 0;
+  margin: 0;
+  color: var(--basic-title);
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+
+/* Offers */
+.offers__list {
+  display: flex;
+  list-style: none;
+}
+.offers__title {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-title);
+  text-transform: uppercase;
+}
+.btn--app {
+  background-color: var(--green);
+}
+.btn--app:hover {
+  background-color: var(--green-hover);
+}
+.btn--app:focus {
+  background-color: var(--green-focus);
+}
+.btn--show {
+  background-color: var(--yellow);
+}
+.btn--show:hover {
+  background-color: var(--yellow-hover);
+}
+.btn--show:focus {
+  background-color: var(--yellow-focus);
+}
+
+/* Info */
+.info__slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+.info__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.info__list {
+  list-style: none;
+}
+
+/* Data */
+.data__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.table__item {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+.table__item--sub {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+/* Main portfolio */
+.main-portfolio__list {
+  display: flex;
+  list-style: none;
+}
+.main-portfolio__img {
+  opacity: 0.2;
+}
+.main-portfolio__img:hover {
+  opacity: 1;
+}
+.main-portfolio__img:focus {
+  opacity: 0.1;        /* не пойму как тут сделать непрозрачность */
+}
+
+/* Main footer */
+
+
+/* Contacts */
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.contacts__info {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-contacts);
+  font-style: normal;
+
+}
+.contacts__phone {
+  color: var(--basic-contacts);
+
+}
+
+/* Social */
+.social__list {
+  display: flex;
+  list-style: none;
+}
+.social__link {
+  color: inherit;
+}
+.social__link:hover {
+
+}
+.social__link:focus {
+
+}
+
+/* Discount */
+.discount__promo {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.discount__info {
+  line-height: 22px;
+  color: var(--basic-footer-info);
+
+}
