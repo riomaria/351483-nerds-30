@@ -46,83 +46,84 @@
     </header>
 
     <main>
-      <div class="container">
-        <section class="inner-page-title">
+      <section class="inner-page">
+        <div class="inner-page__header">
           <div class="container">
-            <h1>Магазин готовых шаблонов</h1>
+            <h1 class="inner-page__title">Магазин готовых шаблонов</h1>
           </div>
-        </section>
+        </div>
+      <div class="container">
+        <div class="inner-page__wrapper">
 
-        <section class="filters">
-          <h2>Фильтр шаблонов</h2>
-          <form method="get" action="">
-            <fieldset class="filters__wrapper">
-              <legend class="filters__title">Стоимость:</legend>
-              <input type="range" name="range" id="range__price" min="0" max="100"
-              value="60">
-              <div class="range">
-                <label class="range__subtitle" for="range__min">от</label>
-                <input class="range__item range__item--min" id="range__min"
-                type="text" name="min-price" value="0">
-                <label class="range__subtitle" for="range__max">до</label>
-                <input class="range__item range__item--max" id="range__max"
-                type="text" name="max-price" value="15000">
-              </div>
-            </fieldset>
+          <section class="filters">
+            <h2 class="visually-hidden">Фильтр шаблонов</h2>
+            <form method="get" action="">
+              <fieldset class="filters__wrapper">
+                <legend class="filters__title">Стоимость:</legend>
+                <input type="range" name="range" id="range__price" min="0" max="100"
+                value="60">
+                <div class="range">
+                  <label class="range__subtitle" for="range__min">от</label>
+                  <input class="range__item range__item--min" id="range__min"
+                  type="text" name="min-price" value="0">
+                  <label class="range__subtitle" for="range__max">до</label>
+                  <input class="range__item range__item--max" id="range__max"
+                  type="text" name="max-price" value="15000">
+                </div>
+              </fieldset>
 
-            <fieldset class="filters__wrapper">
-              <legend class="filters__title">Сетка:</legend>
-              <ul class="filters__list">
-                <li class="filters__item">
-                  <input type="radio" name="gride" value="adaptive"
-                  id="gride-adaptive" checked>
-                  <label for="gride-adaptive">Адаптивная</label>
-                </li>
-                <li class="filters__item">
-                  <input type="radio" name="gride" value="fixed"
-                  id="gride-fixed">
-                  <label for="gride-fixed">Фиксированная</label>
-                </li>
-                <li class="filters__item">
-                  <input type="radio" name="gride" value="rubber"
-                  id="gride-rubber">
-                  <label for="gride-rubber">Резиновая</label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="filters__wrapper">
+                <legend class="filters__title">Сетка:</legend>
+                <ul class="filters__list">
+                  <li class="filters__item">
+                    <input type="radio" name="gride" value="adaptive"
+                    id="gride-adaptive" checked>
+                    <label for="gride-adaptive">Адаптивная</label>
+                  </li>
+                  <li class="filters__item">
+                    <input type="radio" name="gride" value="fixed"
+                    id="gride-fixed">
+                    <label for="gride-fixed">Фиксированная</label>
+                  </li>
+                  <li class="filters__item">
+                    <input type="radio" name="gride" value="rubber"
+                    id="gride-rubber">
+                    <label for="gride-rubber">Резиновая</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="filters__wrapper">
-              <legend class="filters__title">Особенности:</legend>
-              <ul class="filters__list">
-                <li class="filters__item">
-                  <input type="checkbox" name="case-slider" id="option-slider" checked>
-                  <label for="option-slider">Слайдер</label>
-                </li>
-                <li class="filters__item">
-                  <input type="checkbox" name="case-vantage" id="option-vantage">
-                  <label for="option-vantage">Блок преимуществ</label>
-                </li>
-                <li class="filters__item">
-                  <input type="checkbox" name="case-news" id="option-news" checked>
-                  <label for="option-news">Новости</label>
-                </li>
-                <li class="filters__item">
-                  <input type="checkbox" name="case-gallery" id="option-gallery">
-                  <label for="option-gallery">Галерея</label>
-                </li>
-                <li class="filters__item">
-                  <input type="checkbox" name="case-backet" id="option-backet">
-                  <label for="option-backet">Корзина</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="filter__btn btn" type="submit">Показать</button>
-          </form>
-        </section>
+              <fieldset class="filters__wrapper">
+                <legend class="filters__title">Особенности:</legend>
+                <ul class="filters__list">
+                  <li class="filters__item">
+                    <input type="checkbox" name="case-slider" id="option-slider" checked>
+                    <label for="option-slider">Слайдер</label>
+                  </li>
+                  <li class="filters__item">
+                    <input type="checkbox" name="case-vantage" id="option-vantage">
+                    <label for="option-vantage">Блок преимуществ</label>
+                  </li>
+                  <li class="filters__item">
+                    <input type="checkbox" name="case-news" id="option-news" checked>
+                    <label for="option-news">Новости</label>
+                  </li>
+                  <li class="filters__item">
+                    <input type="checkbox" name="case-gallery" id="option-gallery">
+                    <label for="option-gallery">Галерея</label>
+                  </li>
+                  <li class="filters__item">
+                    <input type="checkbox" name="case-backet" id="option-backet">
+                    <label for="option-backet">Корзина</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="btn--filter btn" type="submit">Показать</button>
+            </form>
+          </section>
 
-        <div class="shop-wrapper">
           <section class="sort">
-            <h2>Фильтр шаблонов по параметрам</h2>
+            <h2 class="visually-hidden">Фильтр шаблонов по параметрам</h2>
             <h3 class="sort__title">Сортировать</h3>
             <ul class="sort__list">
               <li class="sort__item">
@@ -146,7 +147,7 @@
           </section>
 
           <section class="shop">
-            <h2>Магазин шаблонов</h2>
+            <h2 class="visually-hidden">Магазин шаблонов</h2>
 
             <ul class="shop__list">
               <li class="shop__item">
@@ -206,8 +207,9 @@
             </ul>
           </section>
 
+          </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -224,24 +226,25 @@
       </section>
 
       <section class="social">
-        <h2>Мы в социальных сетях</h2>
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <div class="container">
+          <div class="social__wrapper">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="blank.html">Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="blank.html">Фейсбук</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--inst" href="blank.html">Инстаграм</a>
+              </li>
+            </ul>
 
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="blank.html">Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="blank.html">Фейсбук</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--inst" href="blank.html">Инстаграм</a>
-            </li>
-          </ul>
-
-          <div class="discount">
-            <p class="discount__promo">Давайте дружить, это выгодно!</p>
-            <p class="discount__info">Скидка 10% для друзей из социальных сетей.</p>
+            <div class="discount">
+              <p class="discount__promo">Давайте дружить, это выгодно!</p>
+              <p class="discount__info">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
           </div>
         </div>
       </section>

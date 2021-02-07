@@ -6,13 +6,13 @@
   --basiс-title: #000000;
   --red: #FB565A;
   --red-hover: #E74246;
-  --red-focus: #D7373B;
+  --red-active: #D7373B;
   --green: #00CA74;
   --green-hover: #00BC6C;
-  --green-focus: #00AA62;
+  --green-active: #00AA62;
   --yellow: #EFC84A;
   --yellow-hover: #EAB534;
-  --yellow-focus: #E5A722;
+  --yellow-active: #E5A722;
   --grey: #EEEEEE;
   --grey-hover: #DFDFDF;
   --grey-active: #D5D5D5;
@@ -53,84 +53,130 @@ img {
   margin: -1px;
 }
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
 /* Button */
 .btn {
-  font: inherit;
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 18px;
   text-align: center;
-  color: var(--basic-theme);
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--red);
+  color: var(--basic-theme);
   border: none;
+  border-radius: 3px;
 }
 .btn:hover {
   background-color: var(--red-hover);
 }
-.btn:focus {
-  background-color: var(--red-focus);
+.btn:active {
+  background-color: var(--red-active);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Grid */
-.page {
-  height: 100%;
+.page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 /* Main navigation */
 .main-header {
+  padding-bottom: 78px;
   background-color: var(--grey);
 }
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   color: var(--basic-title);
   text-transform: uppercase;
 }
-.navigation__list {
-  list-style: none;
+.logo__link {
+  width: 160px;
+  height: 65px;
+  margin-right: 200px;
 }
 
 /* User navigation */
+.navigation__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  margin: 0;
 
+}
 .navigation__link {
+  display: block;
+  padding: 5px 10px;
   color: var(--basic-title);
 }
 .navigation__link:hover {
   color: var(--red-hover);
 }
-.navigation__link:focus {
-  color: var(--basic-title); /!чего-то не могу пока придумать, как сделать его не красным
-  opacity: 30%;
+.navigation__link:active {
+  color: rgba(0,0,0, 0.3);
 }
+.navigation__link {
+  display: inline-block;
+}
+
 
 /* Main slider */
 .slider {
   background-color: var(--grey);
 }
 .slider__list {
+  width: 526px;
   display: grid;
-  padding: 0;
+  padding: 0 0 80px 0;
   margin: 0;
   list-style: none;
 }
 .slider__title {
   padding: 0;
   margin: 0;
+  margin-bottom: 37px;
   color: var(--basic-title);
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+}
+.slider__info {
+  margin-bottom: 27px;
+}
+.slider__btn {
+  width: 240px;
+
 }
 
 
 /* Offers */
 .offers__list {
   display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 80px 0 80px 0;
   list-style: none;
+  border-bottom: 2px solid var(--grey);
+}
+.offers__item {
+  min-width: 300px;
+  margin-right: 100px;
+
+}
+.offers__item:nth-child(3n){
+  margin-right: 0;
 }
 .offers__title {
   font-size: 24px;
@@ -138,25 +184,36 @@ img {
   color: var(--basic-title);
   text-transform: uppercase;
 }
+.offers__info {
+  width: 260px;
+}
+
 .btn--app {
   background-color: var(--green);
 }
 .btn--app:hover {
   background-color: var(--green-hover);
 }
-.btn--app:focus {
-  background-color: var(--green-focus);
+.btn--app:active {
+  background-color: var(--green-active);
 }
 .btn--show {
   background-color: var(--yellow);
 }
 .btn--show:hover {
-  background-color: var(--yellow-hover);
+  background-color: var(--yellow-active);
 }
-.btn--show:focus {
-  background-color: var(--yellow-focus);
+.btn--show:active {
+  background-color: var(--yellow-active);
 }
 
+/* Info */
+.about-us__wrapper {
+  display: flex;
+}
+.about-us__wrapper {
+  border-bottom: 2px solid var(--grey);
+}
 /* Info */
 .info__slogan {
   font-size: 45px;
@@ -171,9 +228,12 @@ img {
 }
 .info__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Data */
+
 .data__title {
   font-size: 16px;
   line-height: 24px;
@@ -194,7 +254,12 @@ img {
 /* Main portfolio */
 .main-portfolio__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+
+  border-bottom: 2px solid var(--grey);
 }
 .main-portfolio__img {
   opacity: 0.2;
@@ -202,8 +267,8 @@ img {
 .main-portfolio__img:hover {
   opacity: 1;
 }
-.main-portfolio__img:focus {
-  opacity: 0.1;        /* не пойму как тут сделать непрозрачность */
+.main-portfolio__img:active {
+  opacity: 0.1;
 }
 
 /* Main footer */
@@ -229,9 +294,21 @@ img {
 }
 
 /* Social */
+.social__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
 .social__list {
   display: flex;
+  justify-content: flex-start;
+  vertical-align: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social__item {
+  margin-right: 9px;
 }
 .social__link {
   color: inherit;
@@ -245,12 +322,72 @@ img {
 
 /* Discount */
 .discount__promo {
+  margin-bottom: 10px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
 }
 .discount__info {
+  margin-bottom: 74px;
   line-height: 22px;
   color: var(--basic-footer-info);
 
 }
+
+/* Shop header */
+
+.inner-page__header {
+  background-color: var(--grey);
+}
+.inner-page__title {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+  padding-bottom: 108px;
+  margin: 0;
+}
+/* Global Shop */
+.inner-page__wrapper {
+  display: grid;
+  grid-template-columns: 260px 2fr;
+
+}
+/* Filters */
+.filters__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700px;
+  text-transform: uppercase;
+  color: var(--basic-title);
+}
+.range__subtitle {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400px;
+  text-transform: uppercase;
+  color: var(--basic-text);
+}
+.filters__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.filters__item {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400px;
+  color: var(--basic-text);
+}
+.btn--filter {
+  .btn--filter {
+    background-color:
+  }
+  .btn--fiter:hover {
+    background-color:
+  }
+  .btn--filter:active {
+    background-color:
+  }
+
+}
+/* Shop */
