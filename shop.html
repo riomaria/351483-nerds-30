@@ -54,83 +54,87 @@
       </section>
 
       <section class="inner-page__shop">
-        <div class="container inner-page__wrapper">
+        <div class="container inner-page__main">
 
           <section class="filters">
             <h2 class="visually-hidden">Фильтр шаблонов</h2>
             <form method="get" action="">
-              <fieldset class="filters__wrapper">
-                <legend class="filters__title">Стоимость:</legend>
-                <input type="range" name="range" id="range__price" min="0" max="100"
-                value="60">
+              <fieldset class="filter__wrapper">
+                <legend class="filter__title">Стоимость:</legend>
                 <div class="range">
-                  <label class="range__subtitle" for="range__min">от</label>
-                  <input class="range__item range__item--min" id="range__min"
-                  type="text" name="min-price" value="0">
-                  <label class="range__subtitle" for="range__max">до</label>
-                  <input class="range__item range__item--max" id="range__max"
-                  type="text" name="max-price" value="15000">
+                  <div class="range__controls">
+                    <div class="range__scale">
+                      <div class="range__bar" style="
+                          width: 75%;
+                          margin-left: 0;
+                        "></div>
+                    </div>
+                    <div class="range__toggle range__toggle--min" tabindex="0"
+                    style="left: 0;">
+                    </div>
+                    <div class="range__toggle range__toggle--max" tabindex="0"
+                    style="left: 70%;">
+                    </div>
+                  </div>
+
+                  <div class="range__price">
+                    <label class="range__subtitle" for="range__min">от</label>
+                    <input class="range__item range__item--min" id="range__min"
+                    type="text" name="min-price" value="0">
+
+                    <label class="range__subtitle" for="range__max">до</label>
+                    <input class="range__item range__item--max" id="range__max"
+                    type="text" name="max-price" value="15000">
+                  </div>
                 </div>
               </fieldset>
 
-              <fieldset class="filters__wrapper">
-                <legend class="filters__title">Сетка:</legend>
-                <ul class="filters__list">
-                  <li class="filters__item">
-                    <input type="radio" name="gride" value="adaptive"
-                    id="gride-adaptive" checked>
-                    <label for="gride-adaptive">Адаптивная</label>
+              <fieldset class="filter__wrapper">
+                <legend class="filter__title">Сетка:</legend>
+                <ul class="filter__list">
+                  <li class="filter__item radio">
+                    <input class="visually-hidden radio__item radio__item--checked" type="radio" name="gride" 
+                    value="adaptive" id="gride-adaptive" checked>
+                    <label class="radio__title" for="gride-adaptive">Адаптивная</label>
                   </li>
-                  <li class="filters__item">
-                    <input type="radio" name="gride" value="fixed"
-                    id="gride-fixed">
-                    <label for="gride-fixed">Фиксированная</label>
+                  <li class="filter__item radio">
+                    <input class="visually-hidden radio__item" type="radio" name="gride" value="fixed" id="gride-fixed">
+                    <label class="radio__title" for="gride-fixed">Фиксированная</label>
                   </li>
-                  <li class="filters__item">
-                    <input type="radio" name="gride" value="rubber"
-                    id="gride-rubber">
-                    <label for="gride-rubber">Резиновая</label>
+                  <li class="filter__item radio">
+                    <input class="visually-hidden radio__item" type="radio" name="gride" value="rubber" id="gride-rubber">
+                    <label class="radio__title" for="gride-rubber">Резиновая</label>
                   </li>
                 </ul>
               </fieldset>
 
-              <fieldset class="filters__wrapper">
-                <legend class="filters__title">Особенности:</legend>
-                <ul class="filters__list">
-                  <li class="filters__item">
-                    <label class="check">
-                      <input class="check__input" type="checkbox" name="case-slider" checked>
-                      <span class="check__box"></span>
-                      Слайдер
-                    </label>
+              <fieldset class="filter__wrapper">
+                <legend class="filter__title">Особенности:</legend>
+                <ul class="filter__list">
+                  <li class="filter__item checkbox">
+                    <input class="visually-hidden checkbox__item checkbox__item--checked" type="checkbox" 
+                    id="case-slider" name="case-slider" checked>
+                    <label class="checkbox__title" for="case-slider">Слайдер</label>
                   </li>
-                  <li class="filters__item">
-                    <label class="check">
-                      <input class="check__input" type="checkbox" name="case-vantage">
-                      <span class="check__box"></span>
-                      Блок преимуществ
-                    </label>
+                  <li class="filter__item checkbox">
+                    <input class="visually-hidden checkbox__item" type="checkbox" id="case-vantage" 
+                    name="case-vantage">
+                    <label class="checkbox__title" for="case-vantage">Блок преимуществ</label>
                   </li>
-                  <li class="filters__item">
-                    <label class="check">
-                      <input class="check__input" type="checkbox" name="case-news" checked>
-                      <span class="check__box"></span>
-                      Новости
-                    </label>
+                  <li class="filter__item checkbox">
+                    <input class="visually-hidden checkbox__item checkbox__item--checked" type="checkbox" 
+                    id="case-news" name="case-news" checked>
+                    <label class="checkbox__title" for="case-news">Новости</label>
                   </li>
-                  <li class="filters__item">
-                    <label class="check">
-                      <input class="check__input" type="checkbox" name="case-gallery">
-                      <span class="check__box"></span>
-                      Галерея
-                    </label>
+                  <li class="filter__item checkbox">
+                    <input class="visually-hidden checkbox__item" type="checkbox" id="case-gallery" 
+                    name="case-gallery">
+                    <label class="checkbox__title" for="case-gallery">Галерея</label>
                   </li>
-                  <li class="filters__item">
-                    <label class="check">
-                      <input class="check__input" type="checkbox" name="case-backet">
-                      <span class="check__box"></span>
-                      Корзина
-                    </label>
+                  <li class="filter__item checkbox">
+                    <input class="visually-hidden checkbox__item" type="checkbox" id="case-backet" 
+                    name="case-backet">
+                    <label class="checkbox__title" for="case-backet">Корзина</label>
                   </li>
                 </ul>
               </fieldset>
@@ -138,124 +142,131 @@
             <button class="btn--filter btn" type="submit">Показать</button>
           </section>
 
-          <section class="sort">
+          <section class="inner-page__shop">
+
+            <section class="sort">
               <h2 class="visually-hidden">Сортировать по параметрам</h2>
-              <h3 class="sort__title">Сортировать</h3>
-              <ul class="sort__list">
-                <li class="sort__item">
-                  <button class="sort__btn" type="button">По цене</button>
+              <div class="sort__wrapper">
+                <h3 class="filter__title">Сортировать:</h3>
+                <ul class="sort__list">
+                  <li class="sort__item">
+                    <button class="sort__btn" type="button">По цене</button>
+                  </li>
+                  <li class="sort__item">
+                    <button class="sort__btn" type="button">По типу</button>
+                  </li>
+                  <li class="sort__item">
+                    <button class="sort__btn" type="button">По названию</button>
+                  </li>
+                </ul>
+                <ul class="sort__list">
+                  <li class="sort__item--max">
+                    <button class="sort__btn sort__btn--max visually-hidden" type="button">Больше</button>
+                  </li>
+                  <li class="sort__item--min">
+                    <button class="sort__btn sort__btn--min visually-hidden" type="button">Меньше</button>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="shop">
+              <ul class="shop__list">
+
+                <li class="shop__item">
+                  <a class="shop__link" href="blank.html">
+                    <img class="shop__img" src="img/shop-items/shop-sedona.jpg" width="358" height="578" alt="Sedona">
+                  </a>
+                  <div class="shop-hover">
+                    <h3 class="shop-hover__title">Sedona</h3>
+                    <p class="shop-hover__info">Информационный сайт для туристов</p>
+                    <a class="shop-hover__btn btn" href="blank.html">9900 р.</a>
+                  </div>
                 </li>
-                <li class="sort__item">
-                  <button class="sort__btn" type="button">По типу</button>
+  
+                <li class="shop__item">
+                  <a class="shop__link" href="blank.html">
+                    <img class="shop__img" src="img/shop-items/shop-pink.jpg" width="358" height="578" alt="Pink">
+                  </a>
+                  <div class="shop-hover">
+                    <h3 class="shop-hover__title">Pink APP</h3>
+                    <p class="shop-hover__info">Продуктовый лендинг приложения для iOS и Android</p>
+                    <a class="shop-hover__btn btn" href="blank.html">9900 р.</a>
+                  </div>
                 </li>
-                <li class="sort__item">
-                  <button class="sort__btn" type="button">По названию</button>
+  
+                <li class="shop__item">
+                  <a class="shop__link" href="blank.html">
+                    <img class="shop__img" src="img/shop-items/shop-borodinski.jpg" width="358" height="578" alt="Barbershop">
+                  </a>
+                  <div class="shop-hover">
+                    <h3 class="shop-hover__title">Barbershop</h3>
+                    <p class="shop-hover__info">Сайт салона красоты. Для мужчин, да.</p>
+                    <a class="shop-hover__btn btn" href="blank.html">9900 р.</a>
+                  </div>
+                </li>
+  
+                <li class="shop__item">
+                  <a class="shop__link" href="blank.html">
+                    <img class="shop__img" src="img/shop-items/shop-mishka.jpg" width="358" height="578" alt="Mishka">
+                  </a>
+                  <div class="shop-hover">
+                    <h3 class="shop-hover__title">Mishka</h3>
+                    <p class="shop-hover__info">Интернет-магазин вязаных игрушек</p>
+                    <a class="shop-hover__btn btn" href="blank.html">9900 р.</a>
+                  </div>
+                </li>
+  
+                <li class="shop__item">
+                  <a class="shop__link" href="blank.html">
+                    <img class="shop__img" src="img/shop-items/shop-aplus.jpg" width="358" height="578" alt="A Plus">
+                  </a>
+                  <div class="shop-hover">
+                    <h3 class="shop-hover__title">A Plus</h3>
+                    <p class="shop-hover__info">Лендинг курсов повышения квалификации</p>
+                    <a class="shop-hover__btn btn" href="blank.html">9900 р.</a>
+                  </div>
+                </li>
+  
+                <li class="shop__item">
+                  <a class="shop__link" href="blank.html">
+                    <img class="shop__img" src="img/shop-items/shop-kvast.jpg" width="358" height="578" alt="Кваст">
+                  </a>
+                  <div class="shop-hover">
+                    <h3 class="shop-hover__title">Кваст</h3>
+                    <p class="shop-hover__info">Промо-сайт производителя крафтового кваса</p>
+                    <a class="shop-hover__btn btn" href="blank.html">9900 р.</a>
+                  </div>
+                </li>
+  
+              </ul>
+            </section>
+  
+            <section class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--current" href="blank.html">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="blank.html">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="blank.html">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--next" href="blank.html">Следующая</a>
                 </li>
               </ul>
-              <ul class="sort__list">
-                <li class="sort__item--max">
-                  <button class="sort__btn" type="button">Больше</button>
-                </li>
-                <li class="sort__item--min">
-                  <button class="sort__btn--min" type="button">Меньше</button>
-                </li>
-              </ul>
+            </section>
+
           </section>
-
-          <section class="shop">
-            <ul class="shop__list">
-              <li class="shop__item">
-                <a class="shop__link" href="blank.html">
-                  <img class="shop__img" src="img/shop-items/shop-sedona.jpg" width="358" height="578" alt="Sedona">
-                </a>
-
-                <div class="shop-hover">
-                  <h3 class="shop-hover__title">Sedona</h3>
-                  <p class="shop-hover__info">Информационный сайт для туристов</p>
-                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
-                </div>
-              </li>
-
-              <li class="shop__item">
-                <a class="shop__link" href="blank.html">
-                  <img class="shop__img" src="img/shop-items/shop-pink.jpg" width="358" height="578" alt="Pink">
-                </a>
-                <div class="shop-hover">
-                  <h3 class="shop-hover__title">Pink APP</h3>
-                  <p class="shop-hover__info">Продуктовый лендинг приложения для iOS и Android</p>
-                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
-                </div>
-              </li>
-
-              <li class="shop__item">
-                <a class="shop__link" href="blank.html">
-                  <img class="shop__img" src="img/shop-items/shop-borodinski.jpg" width="358" height="578" alt="Barbershop">
-                </a>
-                <div class="shop-hover">
-                  <h3 class="shop-hover__title">Barbershop</h3>
-                  <p class="shop-hover__info">Сайт салона красоты. Для мужчин, да.</p>
-                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
-                </div>
-              </li>
-
-              <li class="shop__item">
-                <a class="shop__link" href="blank.html">
-                  <img class="shop__img" src="img/shop-items/shop-mishka.jpg" width="358" height="578" alt="Mishka">
-                </a>
-                <div class="shop-hover">
-                  <h3 class="shop-hover__title">Mishka</h3>
-                  <p class="shop-hover__info">Интернет-магазин вязаных игрушек</p>
-                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
-                </div>
-              </li>
-
-              <li class="shop__item">
-                <a class="shop__link" href="blank.html">
-                  <img class="shop__img" src="img/shop-items/shop-aplus.jpg" width="358" height="578" alt="A Plus">
-                </a>
-                <div class="shop-hover">
-                  <h3 class="shop-hover__title">A Plus</h3>
-                  <p class="shop-hover__info">Лендинг курсов повышения квалификации</p>
-                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
-                </div>
-              </li>
-
-              <li class="shop__item">
-                <a class="shop__link" href="blank.html">
-                  <img class="shop__img" src="img/shop-items/shop-kvast.jpg" width="358" height="578" alt="Кваст">
-                </a>
-                <div class="shop-hover">
-                  <h3 class="shop-hover__title">Кваст</h3>
-                  <p class="shop-hover__info">Промо-сайт производителя крафтового кваса</p>
-                  <a class="shop-hover__btn" href="blank.html">9900 р.</a>
-                </div>
-              </li>
-
-            </ul>
-          </section>
-
-          <section class="pagination">
-            <ul class="pagination__list">
-              <li class="pagination__item">
-                <a class="pagintion__link" href="blank.html">1</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagintion__link" href="blank.html">2</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagintion__link" href="blank.html">3</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagintion__link" href="blank.html">Следующая</a>
-              </li>
-            </ul>
-          </section>
-
         </div>
       </section>
 
       <section class="contacts">
-        <img class="contacts__img" src="img/map.png" width="1440" height="416" alt="Наш адрес на карте">
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCUQi-hl0A" width="100%" height="416" allowfullscreen
+        alt="Офис нашей компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </iframe>
         <div class="container">
           <div class="contacts__wrapper">
             <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
@@ -266,7 +277,6 @@
         </div>
       </section>
     </main>
-
 
     <footer class="main-footer">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
