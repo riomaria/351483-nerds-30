@@ -502,7 +502,7 @@ body {
 /* Contacts */
 .contacts {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 61px;
 }
 .contacts__wrapper {
   position: absolute;
@@ -536,12 +536,12 @@ body {
   font-weight: 400;
   color: var(--basic-contacts);
   font-style: normal;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .contacts__phone {
   display: block;
   color: var(--basic-contacts);
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   text-decoration: none;
 }
 .contacts__btn {
@@ -651,6 +651,9 @@ body {
   width: 100%;
   color: var(--basic-title);
   background-color: var(--grey);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
 }
 .filters__btn:hover,
 .filters__btn:focus {
@@ -1087,7 +1090,7 @@ body {
   list-style: none;
 }
 .pagination__item {
-  margin-right: 11px;
+  margin-right: 12px;
   margin-bottom: 11px;
 }
 .pagination__item:last-child {
@@ -1096,7 +1099,6 @@ body {
 .pagination__link {
   display: block;
   padding: 16px 20px;
-  vertical-align: middle;
   text-align: center;
   font-size: 16px;
   line-height: 18px;
