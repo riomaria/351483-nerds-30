@@ -111,7 +111,7 @@ body {
   margin-right: 75px;
 }
 .logo__link {
-  display: inline-block;
+  display: block;
 }
 .logo__img {
   width: 160px;
@@ -502,7 +502,7 @@ body {
 /* Contacts */
 .contacts {
   position: relative;
-  margin-bottom: 61px;
+  margin-bottom: 63px;
 }
 .contacts__wrapper {
   position: absolute;
@@ -550,6 +550,7 @@ body {
   margin-bottom: 47px;
   width: 220px;
   box-sizing: border-box;
+  vertical-align: middle;
 }
 /* Main footer */
 .footer__wrapper {
@@ -1038,6 +1039,7 @@ body {
   text-decoration: none;
   margin-top: 27px;
   margin-bottom: 12px;
+  vertical-align: middle;
 }
 .catalog-hover__link:hover, 
 .catalog-hover__link:focus {
