@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -187,7 +187,7 @@
       </section>
 
       <section class="contacts">
-        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCUQi-hl0A" allowfullscreen
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCUQi-hl0A" width="1440" height="416" allowfullscreen
         aria-label="Офис нашей компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
         </iframe>
         <div class="container">
@@ -267,28 +267,28 @@
           <p class="modal-feedback__item">
             <label class="modal-feedback__title">Ваше имя:
               <input class="modal-feedback__text modal-feedback__username" type="text" 
-              name="username" placeholder="Имя Фамилия" required> 
+              name="username" placeholder="Имя Фамилия"> 
             </label>
           </p>
           <p class="modal-feedback__item"> 
             <label class="modal-feedback__title">Ваш email:
-              <input class="modal-feedback__text modal-feedback__usermail" type="text" 
-              name="usermail" placeholder="email@example.com" required>
+              <input class="modal-feedback__text modal-feedback__usermail" type="email" 
+              name="usermail" placeholder="email@example.com">
             </label>
           </p>
           <p class="modal-feedback__item"> 
             <label class="modal-feedback__title">Текст письма:
               <textarea class="modal-feedback__text modal-feedback__usertext" 
-              name="username" placeholder="В свободной  форме"></textarea>
+              name="usertext" placeholder="В свободной  форме"></textarea>
             </label>
           </p>
-        </form>
         <button class="btn modal__btn" type="submit">Отправить</button>
-        <button class="modal__close" type="button" aria-label="Закрыть"></button>
-          
+      </form> 
+      <button class="modal__close" type="button" aria-label="Закрыть"></button>
       </section>
 
-      <script src="js/script.min.js"></script>
+     
+      <script src="js/script.js"></script>
     
   </body>
 </html>

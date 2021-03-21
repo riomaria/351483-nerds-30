@@ -350,7 +350,7 @@
         </div>
       </footer>
 
-      <section class="modal-feedback">
+      <section class="modal-feedback feedback">
         <h1 class="visually-hidden">Форма обратной связи</h1>
         <h2 class="modal-feedback__header">Напишите нам</h2>
         <form class="modal-feedback__list" action="https://echo.htmlacademy.ru" method="post">
@@ -362,14 +362,14 @@
           </p>
           <p class="modal-feedback__item"> 
             <label class="modal-feedback__title">Ваш email:
-              <input class="modal-feedback__text modal-feedback__usermail" type="text" 
+              <input class="modal-feedback__text modal-feedback__usermail" type="email" 
               name="usermail" placeholder="email@example.com">
             </label>
           </p>
           <p class="modal-feedback__item"> 
             <label class="modal-feedback__title">Текст письма:
               <textarea class="modal-feedback__text modal-feedback__usertext"
-              name="username" placeholder="В свободной  форме"></textarea>
+              name="usertext" placeholder="В свободной  форме"></textarea>
             </label>
           </p>
         </form>
@@ -377,8 +377,9 @@
         <button class="modal__close" type="button" aria-label="Закрыть"></button>
           
       </section>
+      
 
-      <script src="js/script.min.js"></script>
-
+      <script src="js/script.js"></script>
+    
   </body>
 </html>
