@@ -938,7 +938,8 @@ body {
   margin-right: 0;
 }
 .sort__btn {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   border: none;
   padding: 0;
   background-color: transparent;
@@ -947,8 +948,8 @@ body {
   font-weight: 400;
   color: var(--basic-title);
   text-transform: uppercase;
+  text-decoration: none;
   opacity: .3;
-  
 }
 .sort__btn:hover,
 .sort__btn:focus {
@@ -958,11 +959,16 @@ body {
 .sort__btn--checked {
   opacity: 1;
 }
+.sort-mark {
+  padding-bottom: 5px;
+}
 .sort-mark__item {
-  margin-left: 18px;
+  margin-left: 20px;
 }
 .sort-mark__btn {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
   border: none;
   background-color: transparent;
   padding: 0;
