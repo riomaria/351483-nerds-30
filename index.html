@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
 
@@ -51,18 +51,18 @@
           <h2 class="visually-hidden">Преимущества</h2>
 
           <div class="slider__control control">
-            <button class="control__item control__item--current" type="button" aria-label="Картинка
+            <button class="control__item control__item--design control__item--current" type="button" aria-label="Картинка
             к слайду: Долго, дорого, скрупулезно"></button>
-            <button class="control__item" type="button" aria-label="Картинка к 
+            <button class="control__item control__item--math" type="button" aria-label="Картинка к 
             слайду: Любим математику как никто другой"></button>
-            <button class="control__item" type="button" aria-label="Картинка к слайду 
+            <button class="control__item control__item--night" type="button" aria-label="Картинка к слайду 
             Только ночь, только хардкор"></button>
           </div>
 
           <ul class="slider__list">
-            <li class="slider__item slider__item--design">
+            <li class="slider__item slider__item--design slider__item--current">
               <p class="slider__title">Долго, дорого, скрупулезно.</p>
-              <p class="slider__info">Математически выверенный дизайн<br>
+              <p class="slider__info">Математически выверенный дизайн&emsp;&emsp;&emsp;&emsp;&emsp;
                 для вашего сайта или мобильного приложения.</p>
               <a class="slider__btn btn" href="blank.html">Узнать больше</a>
             </li>
@@ -75,8 +75,8 @@
             </li>
 
             <li class="slider__item slider__item--night">
-              <p class="slider__title">Только ночь,<br> только хардкор</p>
-              <p class="slider__info">Работать днем, как все? Мы против этого.
+              <p class="slider__title">Только ночь, только&nbsp; хардкор</p>
+              <p class="slider__info">Работать днем, как все? Мы против этого.&emsp;
                 Ближе к полуночи работа только начинается.</p>
               <a class="slider__btn btn" href="blank.html">Узнать больше</a>
             </li>
@@ -98,14 +98,14 @@
 
             <li class="offers__item offers__item--app">
               <h3 class="offers__title">Приложения</h3>
-              <p class="offers__info">Покорите топ-10 приложений <br>
+              <p class="offers__info">Покорите топ-10 приложений &emsp;&emsp;
                  в AppStore и Google Play</p>
               <a class="btn offers__btn btn--app" href="blank.html">Заказать</a>
             </li>
 
             <li class="offers__item offers__item--show">
               <h3 class="offers__title">Презентации</h3>
-              <p class="offers__info">Вы даже не подозреваете,<br>
+              <p class="offers__info">Вы даже не подозреваете,&emsp;&emsp;&emsp;
                 насколько вы изумительны!</p>
               <a class="btn offers__btn btn--show" href="blank.html">Заказать</a>
             </li>
@@ -170,13 +170,13 @@
                 width="209" height="90" alt="Логотип-ссылка на макет сайта Borodinski">
               </a>
             </li>
-            <li class="main-portfolio__item">
+            <li class="main-portfolio__item item--pink">
               <a class="main-portfolio__link" href="blank.html">
                 <img class="main-portfolio__img" src="img/logo-products/logo-pink.png" 
                 width="209" height="90" alt="Логотип-ссылка на макет сайта PINK">
               </a>
             </li>
-            <li class="main-portfolio__item">
+            <li class="main-portfolio__item item--mishka">
               <a class="main-portfolio__link" href="blank.html">
                 <img class="main-portfolio__img" src="img/logo-products/logo-mishka.png" 
                 width="209" height="90" alt="Логотип-ссылка на макет сайта Mishka">
@@ -260,7 +260,7 @@
         </div>
       </footer>
 
-      <section class="modal-feedback">
+      <section class="modal-feedback">  
         <h1 class="visually-hidden">Форма обратной связи</h1>
         <h2 class="modal-feedback__header">Напишите нам</h2>
         <form class="modal-feedback__list" action="https://echo.htmlacademy.ru" method="post">
@@ -282,13 +282,14 @@
               name="usertext" placeholder="В свободной  форме"></textarea>
             </label>
           </p>
-        <button class="btn modal__btn" type="submit">Отправить</button>
-      </form> 
-      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+          <button class="btn modal__btn" type="submit">Отправить</button>
+        </form> 
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
       </section>
 
-     
-      <script src="js/script.js"></script>
-    
+      <script src="js/slider.min.js"></script>
+      <script src="js/script.min.js"></script>
+      
+
   </body>
 </html>
